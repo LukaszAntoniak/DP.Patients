@@ -1,0 +1,230 @@
+2020-11-15 14:17:22.497 +01:00 [DBG] Hosting starting
+2020-11-15 14:17:22.634 +01:00 [INF] User profile is available. Using 'C:\Users\plantluk\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-15 14:17:22.666 +01:00 [DBG] Reading data from file 'C:\Users\plantluk\AppData\Local\ASP.NET\DataProtection-Keys\key-66a4794f-4529-42f5-8aad-0905f034f467.xml'.
+2020-11-15 14:17:22.700 +01:00 [DBG] Found key {66a4794f-4529-42f5-8aad-0905f034f467}.
+2020-11-15 14:17:22.720 +01:00 [DBG] Considering key {66a4794f-4529-42f5-8aad-0905f034f467} with expiration date 2021-02-13 10:51:42Z as default key.
+2020-11-15 14:17:22.757 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=3.1.4.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2020-11-15 14:17:22.770 +01:00 [DBG] Decrypting secret element using Windows DPAPI.
+2020-11-15 14:17:22.774 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=3.1.4.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2020-11-15 14:17:22.778 +01:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2020-11-15 14:17:22.784 +01:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2020-11-15 14:17:22.789 +01:00 [DBG] Using key {66a4794f-4529-42f5-8aad-0905f034f467} as the default key.
+2020-11-15 14:17:22.791 +01:00 [DBG] Key ring with default key {66a4794f-4529-42f5-8aad-0905f034f467} was loaded during application startup.
+2020-11-15 14:17:23.446 +01:00 [DBG] Failed to locate the development https certificate at 'null'.
+2020-11-15 14:17:23.609 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: FE65B8EC69410CC2FB6C2B6C3905621163269F2D)
+2020-11-15 14:17:23.704 +01:00 [INF] Now listening on: https://localhost:5002
+2020-11-15 14:17:23.742 +01:00 [DBG] Loaded hosting startup assembly DP.Notifications
+2020-11-15 14:17:23.755 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-11-15 14:17:23.756 +01:00 [INF] Hosting environment: Development
+2020-11-15 14:17:23.758 +01:00 [INF] Content root path: C:\Users\plantluk\source\repos\DP.Patients\DP.Notifications
+2020-11-15 14:17:23.760 +01:00 [DBG] Hosting started
+2020-11-15 14:17:24.102 +01:00 [DBG] Connection id "0HM49D3591M0F" received FIN.
+2020-11-15 14:17:24.104 +01:00 [DBG] Connection id "0HM49D3591M0G" received FIN.
+2020-11-15 14:17:24.232 +01:00 [DBG] Connection id "0HM49D3591M0F" accepted.
+2020-11-15 14:17:24.254 +01:00 [DBG] Connection id "0HM49D3591M0G" accepted.
+2020-11-15 14:17:24.256 +01:00 [DBG] Connection id "0HM49D3591M0F" started.
+2020-11-15 14:17:24.341 +01:00 [DBG] Connection id "0HM49D3591M0H" accepted.
+2020-11-15 14:17:24.348 +01:00 [DBG] Connection id "0HM49D3591M0G" started.
+2020-11-15 14:17:24.430 +01:00 [DBG] Connection id "0HM49D3591M0H" started.
+2020-11-15 14:17:24.430 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Authentication failed because the remote party has closed the transport stream.
+   at System.Net.Security.SslStream.StartReadFrame(Byte[] buffer, Int32 readBytes, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.StartReceiveBlob(Byte[] buffer, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.ForceAuthentication(Boolean receiveFirst, Byte[] buffer, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.ProcessAuthentication(LazyAsyncResult lazyResult, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.BeginAuthenticateAsServer(SslServerAuthenticationOptions sslServerAuthenticationOptions, CancellationToken cancellationToken, AsyncCallback asyncCallback, Object asyncState)
+   at System.Net.Security.SslStream.<>c.<AuthenticateAsServerAsync>b__69_0(SslServerAuthenticationOptions arg1, CancellationToken arg2, AsyncCallback callback, Object state)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncImpl[TArg1,TArg2](Func`5 beginMethod, Func`2 endFunction, Action`1 endAction, TArg1 arg1, TArg2 arg2, Object state, TaskCreationOptions creationOptions)
+   at System.Threading.Tasks.TaskFactory.FromAsync[TArg1,TArg2](Func`5 beginMethod, Action`1 endMethod, TArg1 arg1, TArg2 arg2, Object state, TaskCreationOptions creationOptions)
+   at System.Threading.Tasks.TaskFactory.FromAsync[TArg1,TArg2](Func`5 beginMethod, Action`1 endMethod, TArg1 arg1, TArg2 arg2, Object state)
+   at System.Net.Security.SslStream.AuthenticateAsServerAsync(SslServerAuthenticationOptions sslServerAuthenticationOptions, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.InnerOnConnectionAsync(ConnectionContext context)
+2020-11-15 14:17:24.727 +01:00 [VRB] Connection id "0HM49D3591M0H" sending "SETTINGS" frame for stream ID 0 with length 18 and flags "NONE"
+2020-11-15 14:17:24.430 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Authentication failed because the remote party has closed the transport stream.
+   at System.Net.Security.SslStream.StartReadFrame(Byte[] buffer, Int32 readBytes, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.StartReceiveBlob(Byte[] buffer, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.ForceAuthentication(Boolean receiveFirst, Byte[] buffer, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.ProcessAuthentication(LazyAsyncResult lazyResult, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.BeginAuthenticateAsServer(SslServerAuthenticationOptions sslServerAuthenticationOptions, CancellationToken cancellationToken, AsyncCallback asyncCallback, Object asyncState)
+   at System.Net.Security.SslStream.<>c.<AuthenticateAsServerAsync>b__69_0(SslServerAuthenticationOptions arg1, CancellationToken arg2, AsyncCallback callback, Object state)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncImpl[TArg1,TArg2](Func`5 beginMethod, Func`2 endFunction, Action`1 endAction, TArg1 arg1, TArg2 arg2, Object state, TaskCreationOptions creationOptions)
+   at System.Threading.Tasks.TaskFactory.FromAsync[TArg1,TArg2](Func`5 beginMethod, Action`1 endMethod, TArg1 arg1, TArg2 arg2, Object state, TaskCreationOptions creationOptions)
+   at System.Threading.Tasks.TaskFactory.FromAsync[TArg1,TArg2](Func`5 beginMethod, Action`1 endMethod, TArg1 arg1, TArg2 arg2, Object state)
+   at System.Net.Security.SslStream.AuthenticateAsServerAsync(SslServerAuthenticationOptions sslServerAuthenticationOptions, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.InnerOnConnectionAsync(ConnectionContext context)
+2020-11-15 14:17:24.820 +01:00 [VRB] Connection id "0HM49D3591M0H" sending "WINDOW_UPDATE" frame for stream ID 0 with length 4 and flags 0x0
+2020-11-15 14:17:24.825 +01:00 [DBG] Connection id "0HM49D3591M0F" stopped.
+2020-11-15 14:17:24.847 +01:00 [DBG] Connection id "0HM49D3591M0G" stopped.
+2020-11-15 14:17:24.857 +01:00 [VRB] Connection id "0HM49D3591M0H" received "SETTINGS" frame for stream ID 0 with length 24 and flags "NONE"
+2020-11-15 14:17:24.868 +01:00 [DBG] Connection id "0HM49D3591M0F" sending FIN because: "The Socket transport's send loop completed gracefully."
+2020-11-15 14:17:24.872 +01:00 [DBG] Connection id "0HM49D3591M0G" sending FIN because: "The Socket transport's send loop completed gracefully."
+2020-11-15 14:17:24.878 +01:00 [VRB] Connection id "0HM49D3591M0H" sending "SETTINGS" frame for stream ID 0 with length 0 and flags "ACK"
+2020-11-15 14:17:24.932 +01:00 [VRB] Connection id "0HM49D3591M0H" received "WINDOW_UPDATE" frame for stream ID 0 with length 4 and flags 0x0
+2020-11-15 14:17:24.946 +01:00 [VRB] Connection id "0HM49D3591M0H" received "HEADERS" frame for stream ID 1 with length 344 and flags "END_STREAM, END_HEADERS, PRIORITY"
+2020-11-15 14:17:25.052 +01:00 [VRB] Connection id "0HM49D3591M0H" received "SETTINGS" frame for stream ID 0 with length 0 and flags "ACK"
+2020-11-15 14:17:25.076 +01:00 [INF] Request starting HTTP/2 GET https://localhost:5002/weatherforecast  
+2020-11-15 14:17:25.113 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2020-11-15 14:17:25.129 +01:00 [VRB] All hosts are allowed.
+2020-11-15 14:17:25.242 +01:00 [DBG] 1 candidate(s) found for the request path '/weatherforecast'
+2020-11-15 14:17:25.314 +01:00 [DBG] Endpoint 'DP.Notifications.Controllers.WeatherForecastController.Get (DP.Notifications)' with route pattern 'WeatherForecast' is valid for the request path '/weatherforecast'
+2020-11-15 14:17:25.340 +01:00 [DBG] Request matched endpoint 'DP.Notifications.Controllers.WeatherForecastController.Get (DP.Notifications)'
+2020-11-15 14:17:26.058 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2020-11-15 14:17:26.073 +01:00 [INF] Executing endpoint 'DP.Notifications.Controllers.WeatherForecastController.Get (DP.Notifications)'
+2020-11-15 14:17:26.094 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider"]
+2020-11-15 14:17:26.224 +01:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[DP.Notifications.WeatherForecast] Get() on controller DP.Notifications.Controllers.WeatherForecastController (DP.Notifications).
+2020-11-15 14:17:26.247 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2020-11-15 14:17:26.273 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2020-11-15 14:17:26.279 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2020-11-15 14:17:26.329 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2020-11-15 14:17:26.346 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2020-11-15 14:17:26.384 +01:00 [DBG] Executing controller factory for controller DP.Notifications.Controllers.WeatherForecastController (DP.Notifications)
+2020-11-15 14:17:26.437 +01:00 [DBG] Executed controller factory for controller DP.Notifications.Controllers.WeatherForecastController (DP.Notifications)
+2020-11-15 14:17:26.494 +01:00 [VRB] Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-11-15 14:17:26.746 +01:00 [VRB] Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-11-15 14:17:26.775 +01:00 [VRB] Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-11-15 14:17:26.838 +01:00 [VRB] Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-11-15 14:17:26.876 +01:00 [INF] Executing action method DP.Notifications.Controllers.WeatherForecastController.Get (DP.Notifications) - Validation state: "Valid"
+2020-11-15 14:17:26.909 +01:00 [INF] Executed action method DP.Notifications.Controllers.WeatherForecastController.Get (DP.Notifications), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 4.7194ms.
+2020-11-15 14:17:26.918 +01:00 [VRB] Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-11-15 14:17:26.923 +01:00 [VRB] Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-11-15 14:17:26.946 +01:00 [VRB] Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-11-15 14:17:26.985 +01:00 [VRB] Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-11-15 14:17:26.994 +01:00 [VRB] Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2020-11-15 14:17:27.012 +01:00 [VRB] Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2020-11-15 14:17:27.024 +01:00 [VRB] Before executing action result Microsoft.AspNetCore.Mvc.ObjectResult.
+2020-11-15 14:17:27.035 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2020-11-15 14:17:27.062 +01:00 [DBG] No information found on request to perform content negotiation.
+2020-11-15 14:17:27.066 +01:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2020-11-15 14:17:27.078 +01:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2020-11-15 14:17:27.089 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2020-11-15 14:17:27.093 +01:00 [INF] Executing ObjectResult, writing value of type 'DP.Notifications.WeatherForecast[]'.
+2020-11-15 14:17:27.143 +01:00 [VRB] Connection id "0HM49D3591M0H" sending "HEADERS" frame for stream ID 1 with length 99 and flags "END_HEADERS"
+2020-11-15 14:17:27.164 +01:00 [VRB] Connection id "0HM49D3591M0H" sending "DATA" frame for stream ID 1 with length 498 and flags "NONE"
+2020-11-15 14:17:27.175 +01:00 [VRB] After executing action result Microsoft.AspNetCore.Mvc.ObjectResult.
+2020-11-15 14:17:27.199 +01:00 [VRB] Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2020-11-15 14:17:27.394 +01:00 [VRB] Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2020-11-15 14:17:27.426 +01:00 [INF] Executed action DP.Notifications.Controllers.WeatherForecastController.Get (DP.Notifications) in 1016.9394ms
+2020-11-15 14:17:27.434 +01:00 [INF] Executed endpoint 'DP.Notifications.Controllers.WeatherForecastController.Get (DP.Notifications)'
+2020-11-15 14:17:27.449 +01:00 [INF] HTTP GET /weatherforecast responded 200 in 2292.2545 ms
+2020-11-15 14:17:27.456 +01:00 [VRB] Connection id "0HM49D3591M0H" sending "DATA" frame for stream ID 1 with length 0 and flags "END_STREAM"
+2020-11-15 14:17:27.462 +01:00 [INF] Request finished in 2390.7024ms 200 application/json; charset=utf-8
+2020-11-15 14:17:27.934 +01:00 [VRB] Connection id "0HM49D3591M0H" received "HEADERS" frame for stream ID 3 with length 117 and flags "END_STREAM, END_HEADERS, PRIORITY"
+2020-11-15 14:17:27.971 +01:00 [INF] Request starting HTTP/2 GET https://localhost:5002/favicon.ico  
+2020-11-15 14:17:27.992 +01:00 [VRB] All hosts are allowed.
+2020-11-15 14:17:28.002 +01:00 [DBG] No candidates found for the request path '/favicon.ico'
+2020-11-15 14:17:28.011 +01:00 [DBG] Request did not match any endpoints
+2020-11-15 14:17:28.040 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2020-11-15 14:17:28.072 +01:00 [INF] HTTP GET /favicon.ico responded 404 in 70.8808 ms
+2020-11-15 14:17:28.150 +01:00 [VRB] Connection id "0HM49D3591M0H" sending "HEADERS" frame for stream ID 3 with length 71 and flags "END_STREAM, END_HEADERS"
+2020-11-15 14:17:28.159 +01:00 [INF] Request finished in 187.5015ms 404 
+2020-11-15 14:17:31.367 +01:00 [DBG] Connection id "0HM49D3591M0H" received FIN.
+2020-11-15 14:17:31.375 +01:00 [DBG] Connection id "0HM49D3591M0H" is closed. The last processed stream ID was 3.
+2020-11-15 14:17:31.384 +01:00 [DBG] Connection id "0HM49D3591M0H" sending FIN because: "The client closed the connection."
+2020-11-15 14:17:31.403 +01:00 [DBG] Connection id "0HM49D3591M0H" stopped.
+2020-11-15 14:38:52.481 +01:00 [DBG] Hosting starting
+2020-11-15 14:38:52.710 +01:00 [INF] User profile is available. Using 'C:\Users\plantluk\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-15 14:38:52.751 +01:00 [DBG] Reading data from file 'C:\Users\plantluk\AppData\Local\ASP.NET\DataProtection-Keys\key-66a4794f-4529-42f5-8aad-0905f034f467.xml'.
+2020-11-15 14:38:52.811 +01:00 [DBG] Found key {66a4794f-4529-42f5-8aad-0905f034f467}.
+2020-11-15 14:38:52.828 +01:00 [DBG] Considering key {66a4794f-4529-42f5-8aad-0905f034f467} with expiration date 2021-02-13 10:51:42Z as default key.
+2020-11-15 14:38:52.844 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=3.1.4.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2020-11-15 14:38:52.854 +01:00 [DBG] Decrypting secret element using Windows DPAPI.
+2020-11-15 14:38:52.858 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=3.1.4.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2020-11-15 14:38:52.871 +01:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2020-11-15 14:38:52.877 +01:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2020-11-15 14:38:52.886 +01:00 [DBG] Using key {66a4794f-4529-42f5-8aad-0905f034f467} as the default key.
+2020-11-15 14:38:52.891 +01:00 [DBG] Key ring with default key {66a4794f-4529-42f5-8aad-0905f034f467} was loaded during application startup.
+2020-11-15 14:38:54.091 +01:00 [DBG] Failed to locate the development https certificate at 'null'.
+2020-11-15 14:38:54.174 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: FE65B8EC69410CC2FB6C2B6C3905621163269F2D)
+2020-11-15 14:38:54.185 +01:00 [INF] Now listening on: https://localhost:5002
+2020-11-15 14:38:54.189 +01:00 [DBG] Loaded hosting startup assembly DP.Notifications
+2020-11-15 14:38:54.192 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-11-15 14:38:54.195 +01:00 [INF] Hosting environment: Development
+2020-11-15 14:38:54.200 +01:00 [INF] Content root path: C:\Users\plantluk\source\repos\DP.Patients\DP.Notifications
+2020-11-15 14:38:54.202 +01:00 [DBG] Hosting started
+2020-11-15 14:38:54.256 +01:00 [DBG] Connection id "0HM49DF5OTHL1" received FIN.
+2020-11-15 14:38:54.277 +01:00 [DBG] Connection id "0HM49DF5OTHL1" accepted.
+2020-11-15 14:38:54.293 +01:00 [DBG] Connection id "0HM49DF5OTHL1" started.
+2020-11-15 14:38:54.348 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Authentication failed because the remote party has closed the transport stream.
+   at System.Net.Security.SslStream.StartReadFrame(Byte[] buffer, Int32 readBytes, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.StartReceiveBlob(Byte[] buffer, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.ForceAuthentication(Boolean receiveFirst, Byte[] buffer, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.ProcessAuthentication(LazyAsyncResult lazyResult, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.BeginAuthenticateAsServer(SslServerAuthenticationOptions sslServerAuthenticationOptions, CancellationToken cancellationToken, AsyncCallback asyncCallback, Object asyncState)
+   at System.Net.Security.SslStream.<>c.<AuthenticateAsServerAsync>b__69_0(SslServerAuthenticationOptions arg1, CancellationToken arg2, AsyncCallback callback, Object state)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncImpl[TArg1,TArg2](Func`5 beginMethod, Func`2 endFunction, Action`1 endAction, TArg1 arg1, TArg2 arg2, Object state, TaskCreationOptions creationOptions)
+   at System.Threading.Tasks.TaskFactory.FromAsync[TArg1,TArg2](Func`5 beginMethod, Action`1 endMethod, TArg1 arg1, TArg2 arg2, Object state, TaskCreationOptions creationOptions)
+   at System.Threading.Tasks.TaskFactory.FromAsync[TArg1,TArg2](Func`5 beginMethod, Action`1 endMethod, TArg1 arg1, TArg2 arg2, Object state)
+   at System.Net.Security.SslStream.AuthenticateAsServerAsync(SslServerAuthenticationOptions sslServerAuthenticationOptions, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.InnerOnConnectionAsync(ConnectionContext context)
+2020-11-15 14:38:54.988 +01:00 [DBG] Connection id "0HM49DF5OTHL2" accepted.
+2020-11-15 14:38:55.149 +01:00 [DBG] Connection id "0HM49DF5OTHL1" stopped.
+2020-11-15 14:38:55.237 +01:00 [DBG] Connection id "0HM49DF5OTHL2" started.
+2020-11-15 14:38:55.395 +01:00 [DBG] Connection id "0HM49DF5OTHL1" sending FIN because: "The Socket transport's send loop completed gracefully."
+2020-11-15 14:38:55.487 +01:00 [VRB] Connection id "0HM49DF5OTHL2" sending "SETTINGS" frame for stream ID 0 with length 18 and flags "NONE"
+2020-11-15 14:38:55.500 +01:00 [VRB] Connection id "0HM49DF5OTHL2" sending "WINDOW_UPDATE" frame for stream ID 0 with length 4 and flags 0x0
+2020-11-15 14:38:55.524 +01:00 [VRB] Connection id "0HM49DF5OTHL2" received "SETTINGS" frame for stream ID 0 with length 24 and flags "NONE"
+2020-11-15 14:38:55.563 +01:00 [VRB] Connection id "0HM49DF5OTHL2" sending "SETTINGS" frame for stream ID 0 with length 0 and flags "ACK"
+2020-11-15 14:38:55.773 +01:00 [VRB] Connection id "0HM49DF5OTHL2" received "WINDOW_UPDATE" frame for stream ID 0 with length 4 and flags 0x0
+2020-11-15 14:38:55.810 +01:00 [VRB] Connection id "0HM49DF5OTHL2" received "HEADERS" frame for stream ID 1 with length 344 and flags "END_STREAM, END_HEADERS, PRIORITY"
+2020-11-15 14:38:55.907 +01:00 [VRB] Connection id "0HM49DF5OTHL2" received "SETTINGS" frame for stream ID 0 with length 0 and flags "ACK"
+2020-11-15 14:38:56.004 +01:00 [INF] Request starting HTTP/2 GET https://localhost:5002/weatherforecast  
+2020-11-15 14:38:56.032 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2020-11-15 14:38:56.058 +01:00 [VRB] All hosts are allowed.
+2020-11-15 14:38:56.151 +01:00 [DBG] 1 candidate(s) found for the request path '/weatherforecast'
+2020-11-15 14:38:56.194 +01:00 [DBG] Endpoint 'DP.Notifications.Controllers.WeatherForecastController.Get (DP.Notifications)' with route pattern 'WeatherForecast' is valid for the request path '/weatherforecast'
+2020-11-15 14:38:56.221 +01:00 [DBG] Request matched endpoint 'DP.Notifications.Controllers.WeatherForecastController.Get (DP.Notifications)'
+2020-11-15 14:38:56.402 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2020-11-15 14:38:56.414 +01:00 [INF] Executing endpoint 'DP.Notifications.Controllers.WeatherForecastController.Get (DP.Notifications)'
+2020-11-15 14:38:56.448 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider"]
+2020-11-15 14:38:56.585 +01:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[DP.Notifications.WeatherForecast] Get() on controller DP.Notifications.Controllers.WeatherForecastController (DP.Notifications).
+2020-11-15 14:38:56.654 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2020-11-15 14:38:56.677 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2020-11-15 14:38:56.714 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2020-11-15 14:38:56.756 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2020-11-15 14:38:56.766 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2020-11-15 14:38:56.787 +01:00 [DBG] Executing controller factory for controller DP.Notifications.Controllers.WeatherForecastController (DP.Notifications)
+2020-11-15 14:38:56.809 +01:00 [DBG] Executed controller factory for controller DP.Notifications.Controllers.WeatherForecastController (DP.Notifications)
+2020-11-15 14:38:56.825 +01:00 [VRB] Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-11-15 14:38:56.856 +01:00 [VRB] Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-11-15 14:38:56.890 +01:00 [VRB] Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-11-15 14:38:56.903 +01:00 [VRB] Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-11-15 14:38:56.983 +01:00 [INF] Executing action method DP.Notifications.Controllers.WeatherForecastController.Get (DP.Notifications) - Validation state: "Valid"
+2020-11-15 14:38:57.017 +01:00 [INF] Executed action method DP.Notifications.Controllers.WeatherForecastController.Get (DP.Notifications), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 3.3663ms.
+2020-11-15 14:38:57.040 +01:00 [VRB] Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-11-15 14:38:57.058 +01:00 [VRB] Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2020-11-15 14:38:57.102 +01:00 [VRB] Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-11-15 14:38:57.141 +01:00 [VRB] Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2020-11-15 14:38:57.218 +01:00 [VRB] Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2020-11-15 14:38:57.241 +01:00 [VRB] Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2020-11-15 14:38:57.271 +01:00 [VRB] Before executing action result Microsoft.AspNetCore.Mvc.ObjectResult.
+2020-11-15 14:38:57.319 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2020-11-15 14:38:57.441 +01:00 [DBG] No information found on request to perform content negotiation.
+2020-11-15 14:38:57.457 +01:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2020-11-15 14:38:57.474 +01:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2020-11-15 14:38:57.493 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2020-11-15 14:38:57.509 +01:00 [INF] Executing ObjectResult, writing value of type 'DP.Notifications.WeatherForecast[]'.
+2020-11-15 14:38:57.567 +01:00 [VRB] Connection id "0HM49DF5OTHL2" sending "HEADERS" frame for stream ID 1 with length 123 and flags "END_HEADERS"
+2020-11-15 14:38:57.688 +01:00 [VRB] Connection id "0HM49DF5OTHL2" sending "DATA" frame for stream ID 1 with length 498 and flags "NONE"
+2020-11-15 14:38:57.735 +01:00 [VRB] After executing action result Microsoft.AspNetCore.Mvc.ObjectResult.
+2020-11-15 14:38:57.774 +01:00 [VRB] Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2020-11-15 14:38:57.891 +01:00 [VRB] Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2020-11-15 14:38:57.925 +01:00 [INF] Executed action DP.Notifications.Controllers.WeatherForecastController.Get (DP.Notifications) in 1133.9436ms
+2020-11-15 14:38:57.941 +01:00 [INF] Executed endpoint 'DP.Notifications.Controllers.WeatherForecastController.Get (DP.Notifications)'
+2020-11-15 14:38:57.964 +01:00 [INF] HTTP GET /weatherforecast responded 200 in 1877.9080 ms
+2020-11-15 14:38:57.987 +01:00 [VRB] Connection id "0HM49DF5OTHL2" sending "DATA" frame for stream ID 1 with length 0 and flags "END_STREAM"
+2020-11-15 14:38:58.064 +01:00 [INF] Request finished in 2078.4298ms 200 application/json; charset=utf-8
+2020-11-15 14:38:59.420 +01:00 [VRB] Connection id "0HM49DF5OTHL2" received "HEADERS" frame for stream ID 3 with length 117 and flags "END_STREAM, END_HEADERS, PRIORITY"
+2020-11-15 14:38:59.441 +01:00 [INF] Request starting HTTP/2 GET https://localhost:5002/favicon.ico  
+2020-11-15 14:38:59.456 +01:00 [VRB] All hosts are allowed.
+2020-11-15 14:38:59.471 +01:00 [DBG] No candidates found for the request path '/favicon.ico'
+2020-11-15 14:38:59.487 +01:00 [DBG] Request did not match any endpoints
+2020-11-15 14:38:59.494 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2020-11-15 14:38:59.518 +01:00 [INF] HTTP GET /favicon.ico responded 404 in 48.2544 ms
+2020-11-15 14:38:59.526 +01:00 [VRB] Connection id "0HM49DF5OTHL2" sending "HEADERS" frame for stream ID 3 with length 138 and flags "END_STREAM, END_HEADERS"
+2020-11-15 14:38:59.539 +01:00 [INF] Request finished in 98.815ms 404 
+2020-11-15 14:39:03.064 +01:00 [DBG] Connection id "0HM49DF5OTHL2" received FIN.
+2020-11-15 14:39:03.091 +01:00 [DBG] Connection id "0HM49DF5OTHL2" is closed. The last processed stream ID was 3.
+2020-11-15 14:39:03.118 +01:00 [DBG] Connection id "0HM49DF5OTHL2" sending FIN because: "The client closed the connection."
+2020-11-15 14:39:03.138 +01:00 [DBG] Connection id "0HM49DF5OTHL2" stopped.
